@@ -58,7 +58,6 @@ static std::string base64_encode(const std::string &in){
 	for(int i = 0;i<padding;i++){
 		bs += paddingCode;
 	}
-	enc = bs;
 
 	//Make a vector filled with the binaryString spilt every 6th character
 	std::vector<std::string> vec = split(bs,6);
@@ -77,7 +76,6 @@ static std::string base64_decode(const std::string &out){
 	std::string ans = "";
 	for (int i = 0;i<out.size();i++){
 		int t = char_set.find(out[i]);
-		std::cout << bitset<6>(t).to_string() << endl;
 		str += bitset<6>(t).to_string();
 	}
 
