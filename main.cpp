@@ -7,6 +7,7 @@
 int main(){
 	int choice;
 	std::string word = "";
+	std::cout << "Welcome! This program encodes and decodes words using base64 encryption." << "\n";
 	do{
 		std::cout << "Type 1 for encode and 2 for decode. 0 to exit" << "\n";
 		std::cin >> choice;
